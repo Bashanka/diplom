@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% for object in object_list %}
+        <div class="card col-sm-3">
+            <img class="card-img-top" src="{{ object.image.url }}">
+            <h5 class="card-title">{{ object.name }}</h5>
+        </div>
+    {% endfor %}
+{% endblock %}
